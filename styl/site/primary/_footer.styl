@@ -1,0 +1,44 @@
+.site-footer
+  color $color__text-main
+  padding rem(63px) 0
+
+  +below($mobile-cutoff)
+    padding rem(20px) 0
+
+  .footer-social
+  .footer-signup
+  .site-info
+    col(1/3)
+
+    +below($tablet-cutoff)
+      stack()
+      text-align center
+      margin-bottom rem(20px)
+
+      &:last-child
+        margin-bottom 0
+
+  .footer-social
+    text-align center
+
+    a
+      color $color__text-main
+
+  .site-info
+    font-family $font__heading
+    font-weight 600
+    font-size rem(14px)
+    letter-spacing 0.07em
+    text-align right
+
+    +below($tablet-cutoff)
+      text-align center
+
+  .footer-signup
+    .button
+      border-color $color__text-main
+      color $color__text-main
+
+      &:hover
+        color #fff
+        background-color $color__text-main

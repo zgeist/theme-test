@@ -1,0 +1,45 @@
+.fw-team
+  cf()
+
+  &-image
+    col(5/17)
+
+    +below($mobile-cutoff)
+      stack()
+      text-align center
+      margin-bottom rem(30px)
+
+      img
+        max-width 200px
+  &-inner
+    col(12/17)
+    padding-left rem(7px)
+
+    +below($mobile-cutoff)
+      stack()
+
+  &-name
+    h2
+      margin 0 0 rem(78px)
+      font-family $font__heading
+      font-size rem(39px)
+      line-height rem(39px)
+      font-weight 700
+      letter-spacing 0.03em
+
+      +below($mobile-cutoff)
+        margin 0 0 rem(20px)
+
+  &-text
+    font-size rem(24px)
+    line-height rem(40px)
+    padding-right rem(40px)
+    margin-bottom rem(28px)
+    p
+      margin 0
+
+  &-cite
+    font-family $font__heading
+    font-weight 700
+    font-size rem(17px)
+    letter-spacing 0.14em

@@ -1,0 +1,75 @@
+ul, ol
+	margin 0 0 1.5em 3em
+ul
+	list-style disc
+ol
+	list-style decimal
+li > ul
+li > ol
+	margin-bottom 0
+	margin-left 1.5em
+dt
+	font-weight bold
+dd
+	margin 0 1.5em 1.5em
+
+.site-social
+	color $color__primary
+	&-list
+		list-style none
+		padding 0
+		margin 0
+
+	&-item
+		display inline-block
+		font-size rem(22px)
+		padding 0 rem(14px)
+
+		&:first-child
+			padding-left 0
+
+		a
+			color $color__primary
+			display block
+
+			.fa
+				line-height rem(26px)
+				display inline-block
+
+			&:hover
+				transform scale(1.1, 1.1)
+				color darken($color__primary, 15%)
+
+.partners
+	display flex
+	flex-wrap wrap
+	align-content center
+	align-items baseline
+	justify-content center
+	text-align center
+	max-width rem(960px)
+	margin auto
+	.partner
+		min-width 20%
+		max-width: 25%;
+		margin: rem(20px) auto;
+		vertical-align middle
+		transition(all 200ms ease-out)
+
+
+		+below($mobile-cutoff)
+			min-width 50%
+			max-width 50%
+
+		a
+			display inline-block
+
+			&:hover
+				transform scale(1.1, 1.1)
+
+	&:hover
+		.partner
+			opacity 0.4
+
+			&:hover
+				opacity 1

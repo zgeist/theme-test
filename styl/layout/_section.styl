@@ -1,0 +1,65 @@
+.fw-container
+  center(1050px, 10px)
+
+.text-block
+  h2
+    margin-top -4px
+    font-size rem(32px)
+    font-weight 400
+
+  p
+    margin 0.6em 0
+
+  + .button
+    margin-top 1.4em
+
+.section
+  padding rem(140px) 0
+
+  +below($tablet-cutoff)
+    padding rem(50px) 0
+
+  +below($mobile-cutoff)
+    padding rem(30px) 0
+
+  &-thin
+    +below($tablet-cutoff)
+      center(600px)
+
+  &-promo
+    min-height rem(610px)
+    position relative
+    color #fff
+
+    +below($tablet-cutoff)
+      min-height 0
+
+    .fw-container, .fw-row, [class*="fw-col-"]
+      position static
+
+    .text-block
+
+      +above($mobile-cutoff)
+        +landscape()
+          align()
+          min-width rem(800px)
+
+
+      h3
+        font-size rem(32px)
+        line-height 1.6
+        letter-spacing -0.015em
+
+        +below($mobile-cutoff)
+          font-size rem(22px)
+
+      h1
+        font-size rem(40px)
+        margin-top rem(69px)
+        margin-bottom rem(37px)
+        font-family $font__heading
+
+        +below($mobile-cutoff)
+          font-size rem(30px)
+          margin rem(20px) 0
+

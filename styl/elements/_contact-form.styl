@@ -1,0 +1,86 @@
+.contact-form
+  .header
+    text-align center
+    color $color__primary
+
+    h2
+      font-size rem(38px)
+      margin 0
+      font-weight 400
+
+    p
+      font-size rem(22px)
+      letter-spacing 0.02em
+
+  br
+    display none
+
+  label
+    margin 0
+    display inline
+
+  .field-text
+    margin-bottom 0
+
+  .wrap-forms
+    padding-top rem(79px)
+
+    +below($tablet-cutoff)
+      center(400px)
+      padding-top 0
+
+  .ajax-loader
+    margin-right -16px
+
+    +below($tablet-cutoff)
+      margin-right 0
+
+  .submit-wrap
+    padding-top 60px
+
+    +below($tablet-cutoff)
+      padding-top 0
+
+      input[type="submit"]
+        width 100%
+
+  .wpcf7-checkbox
+    margin-top rem(10px)
+    display inline-block
+
+    +below($tablet-cutoff)
+      margin-bottom rem(10px)
+
+  .wpcf7-form-control-wrap
+    display block
+
+  .wpcf7-not-valid-tip
+    font-family $font__heading
+    font-size rem(13px)
+    display inline-block
+    absolute 0 0 0 auto
+    margin-top 10px
+
+    &:before
+      content "\f06a"
+      font-family FontAwesome
+      display inline-block
+      margin-right 10px
+
+  .wpcf7-response-output
+    border-radius 0
+    border none
+    margin-left 0
+    margin-right 0
+    padding 10px
+    font-family $font__heading
+    color #fff
+
+    &.wpcf7-validation-errors
+      background-color #ecd832
+
+    &.wpcf7-mail-sent-ok
+      background-color #36c12b
+
+    &.wpcf7-mail-sent-ng
+      background-color #ea3838

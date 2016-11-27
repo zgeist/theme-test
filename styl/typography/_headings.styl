@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5, h6
+	clear both
+	font-family $font__main
+	font-weight 600
+
+h1
+	font-weight 900
+
+h2, h3, h4, h5, h6
+	.section-promo &
+		font-weight 400
+		font-family $font__main
+
+.fw-heading
+	max-width rem(800px)
+	margin 0 auto rem(78px)
+	font-family $font__heading
+
+	+below($mobile-cutoff)
+		margin-bottom rem(30px)
+
+	&-center
+		text-align center
+
+	.fw-special-title
+		margin 0 0 rem(56px)
+		font-family inherit
+		font-weight 800
+		font-size rem(40px)
+
+		+below($mobile-cutoff)
+			font-size rem(25px)
+			margin-bottom rem(20px)
+
+	.fw-special-subtitle
+		font-size rem(16px)
+		line-height rem(28px)
+		font-weight 700
+		letter-spacing 0.1em
+
+		+below($mobile-cutoff)
+			letter-spacing 0
+
+
+
+
+

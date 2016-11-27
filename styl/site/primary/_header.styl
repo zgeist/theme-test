@@ -1,0 +1,34 @@
+.site-header
+  padding rem(52px) 0 rem(42px)
+
+  +below($mobile-cutoff)
+    padding rem(20px) 0
+
+  .site-logo
+  .header-social
+  .header-signup
+    col(1/3)
+
+    +below($tablet-cutoff)
+      stack()
+      text-align center
+      margin-bottom rem(20px)
+
+      &:last-child
+        margin-bottom 0
+  .site-logo
+    text-align center
+
+    img
+      max-width rem(263px)
+
+  .header-social
+    padding-left 0
+  .header-signup
+    text-align right
+
+    +below($tablet-cutoff)
+      text-align center
+
+    .button
+      margin-top -1px

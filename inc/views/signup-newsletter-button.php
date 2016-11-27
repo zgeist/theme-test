@@ -1,0 +1,1 @@
+<a href="#" class="button button-thin" data-remodal-target="modal">Sign up for our newsletter</a>

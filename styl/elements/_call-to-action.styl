@@ -1,0 +1,65 @@
+.fw-call-to-action
+  border none
+
+  .fw-action-content
+    +below($mobile-cutoff)
+      text-align center
+    h2
+      padding rem(20px) rem(40px)
+      margin 0
+      min-height rem(150px)
+      color #fff
+      font-weight 400
+      font-size rem(30px)
+
+      +below($mobile-cutoff)
+        padding rem(15px)
+        text-align center
+        min-height 0
+
+    h3
+      font-size rem(17px)
+      font-family $font__heading
+      letter-spacing 0.14em
+      margin-bottom 0.75em
+
+    p
+      margin-top 0.7em
+      font-size rem(15px)
+      line-height rem(23px)
+
+    .devider
+      height 1px
+      margin rem(20px) 0 rem(73px)
+      position relative
+      transition(all 200ms ease-out)
+      +below($mobile-cutoff)
+        margin rem(20px) 0 rem(30px)
+
+      &:after
+      &:before
+        content ""
+        border-bottom 1px solid transparent
+        display: block;
+
+      &:after
+        absolute 0 0 0 50%
+        margin-left 19px
+
+      &:before
+        absolute 0 50% 0 0
+        margin-right 19px
+
+      span
+        border-bottom 1px solid transparent
+        border-right 1px solid transparent
+        width 28px
+        height 28px
+        display block
+        absolute 1px 0 0 0
+        margin auto
+        transform rotate(45deg)
+
+    &:hover
+      .devider
+        transform translateY(10px)

@@ -1,0 +1,42 @@
+// Rem output with px fallback
+font-size($sizeValue = 1)
+	font-size ($sizeValue * 16 * 1px)
+	font-size ($sizeValue * 1rem)
+
+// Center block
+center-block()
+	display block
+	margin-left auto
+	margin-right auto
+
+// Clearfix
+clearfix()
+	content ""
+	display table
+
+// Clear after (not all clearfix need this also)
+clearfix-after()
+	clear both
+
+button( $color = $color__primary )
+	display inline-block
+	border 1px solid $color
+	color $color
+	outline none
+	font-family $font__heading
+	text-transform uppercase
+	text-decoration none
+	padding 0 rem(18px)
+	height rem(45px)
+	line-height rem(43px)
+	font-size rem(12px)
+	letter-spacing 0.19em
+
+
+	&-thin
+		height rem(32px)
+		line-height rem(30px)
+	&:hover
+		background-color $color
+		color #fff
+
