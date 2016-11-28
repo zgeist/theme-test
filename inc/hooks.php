@@ -392,3 +392,12 @@ function site_subscribe_modal() {
 }
 
 add_action( 'wp_footer', 'site_subscribe_modal' );
+
+function body_class_filter( $classes ){
+
+
+
+	return $classes;
+}
+
+add_filter( 'body_class', 'body_class_filter' );

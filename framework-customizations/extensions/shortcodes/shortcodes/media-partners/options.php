@@ -15,6 +15,13 @@ $options = array(
             'link' => array(
                 'type' => 'text'
             ),
+            'size'  => array(
+                'type'  => 'select',
+                'choices' => array(
+                    'normal' => 'Normal',
+                    'wide'  => 'Wide'
+                )
+            )
         ),
         'template' => '<img src="{{- logo.url }}" width="30">'
     ),

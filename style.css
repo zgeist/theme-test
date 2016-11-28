@@ -451,11 +451,13 @@ dd {
   margin: auto;
 }
 .partners .partner {
-  min-width: 20%;
-  max-width: 25%;
+  width: 20%;
   margin: 1.25rem auto;
   vertical-align: middle;
   transition: all 200ms ease-out;
+}
+.partners .partner.wide {
+  width: 25%;
 }
 @media only screen and (max-width: 600px) {
   .partners .partner {
@@ -503,6 +505,13 @@ table {
   font-weight: 400;
   font-size: 30rem;
   font-size: 1.875rem;
+}
+@media only screen and (max-width: 800px) {
+  .fw-call-to-action .fw-action-content h2 {
+    font-size: 27.008rem;
+    font-size: 1.688rem;
+    padding: 1.25rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .fw-call-to-action .fw-action-content h2 {
@@ -1678,7 +1687,7 @@ a:active {
     margin: 1.25rem 0;
   }
 }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 800px) and (orientation: landscape) {
   .section-promo .text-block {
     position: absolute;
     transform-style: preserve-3d;
@@ -2103,6 +2112,7 @@ a:active {
   font-size: 0.875rem;
   letter-spacing: 0.07em;
   text-align: right;
+  margin-top: 0.25rem;
 }
 @media only screen and (max-width: 800px) {
   .site-footer .site-info {
